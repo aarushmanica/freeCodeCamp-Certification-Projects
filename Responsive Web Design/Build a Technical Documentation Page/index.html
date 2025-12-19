@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Python Fundamentals</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Python_Syntax">Python Syntax</a>
+      <a class="nav-link" href="#Variables">Variables</a>
+      <a class="nav-link" href="#Data_Types">Data Types</a>
+      <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Python is a popular programming language created by Guido van Rossum in 1991</p>
+
+        <p>Common applications of Python include</p>
+        <ul>
+          <li>Web Development</li>
+          <li>Data Science</li>
+          <li>Artificial Intelligence and Machine Learning</li>
+          <li>Software Development</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Python_Syntax">
+        <header>Python Syntax</header>
+        <p>Python indentation refers to the spaces at the beginning of a code line</p>
+        <p>Indentation is not only used in Python for readability but to indicate a block of code</p>
+        <pre><code>if 2 &lt; 5:
+  return True
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>Variables can be referred to as containers to store data</p>
+        <p>The advantage of creating Python variables is that they do not need to be initialised, meaning they don't need to be declared with a particular data type.</p>
+        <code>x = 5</code><br>
+        <code>y = "Hello World"</code><br>
+        <code>print(x)</code><br>
+        <code>print(y)</code><br><br>
+
+        <p>The data type of variables can change even after they have been set</p>
+        <code>x = 12</code><br>
+        <code>x = "John"</code>
+        <code>print(x) # Will return 'John' instead of 12</code><br><br>
+      </section>
+
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>There are many built-in data types in Python, as follows: </p>
+        <ul>
+          <li>Text
+            <ul>
+              <li>String</li>
+            </ul>
+          </li>
+
+          <li>Numeric
+            <ul>
+              <li>Integer</li>
+              <li>Floating-point</li>
+              <li>Complex</li>
+            </ul>
+          </li>
+
+          <li>Sequence
+            <ul>
+              <li>List</li>
+              <li>Tuple</li>
+              <li>Set and frozen sets</li>
+            </ul>
+          </li>
+
+          <li>Mapping
+            <ul>
+              <li>Dictionary</li>
+            </ul>
+          </li>
+
+          <li>Binary
+            <ul>
+              <li>Bytes</li>
+              <li>Byte array</li>
+              <li>Memory view</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Object_Oriented_Programming">
+        <header>Object Oriented Programming</header>
+        <p>OOP is a programming paradigm that uses objects and classes in order to implement real-world entities</p>
+        <h2>Abstraction</h2>
+        <p>Hiding complex internal details and showing only essential features</p>
+        <p>E.g when using a car, the driver (user) only needs to know how to interact with the interface such as transmission, brakes and accelerator but does not need to know more complex functionality such as how the engine works or temperature control etc.</p>
+
+        <h2>Inheritance</h2>
+        <p>A new child class derives attributes, properties and methods from its parent class in order to promote code reusability and lessen code redundancy.</p>
+
+        <p>E.g A car object can re-use or inherit features of the 'Vehicle' superclass such as wheels, brakes, accelerator or engine without having to make its own implementation</p>
+
+        <h2>Encapsulation</h2>
+        <p>Bundling data and methods that operate on that data into a single unit i.e a class.</p>
+
+        <p>E.g consider a 'Bank' class. The 'balance' attribute is made private meaning external code cannot access or modify it (can't write <code>account.balance = 500000</code>). This can enhance the program security and protect data integrity.
+
+        <h2>Generalisation</h2>
+        <p>Extracting common features such as attributes, properties and methods from two classes and creating a new general superclass or base class.</p>
+
+        <p>E.g the common features of a car and motorcycle object include wheels or transmission type which can form the superclass of 'Vehicle'</p>
+
+        <h2>Polymorphism</h2>
+        <p>"Many forms", where objects of different classes to be treated as objects of a common superclass.</p>
+
+        <p>E.g consider the superclass Animal that has a method <code>animalSound()</code>. The subclasses of Animal could include Dog, Cat or Pig, which would have their own implementation of the <code>animalSound()</code> method such as that the dog woofs, cat meows or the pig oinks.
+      </section>
+    </main>
+  </body>
+</html>
